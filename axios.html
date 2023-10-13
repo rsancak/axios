@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Axios</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body class="p-5">
+  <div class="main">
+    <aside>
+      <div class="container-right right">
+        <h1>Axios</h1>
+        <hr />
+        <h2>GET</h2>
+        <hr>
+        <pre class="code code-javascript"><label>JS</label><code>axios.get('https://jsonplaceholder.typicode.com/posts')
+.then(function (response) {
+  console.log(response);
+})
+.catch(function (error) {
+  console.log(error);
+})
+.finally(function () {
+  console.log("Hi!"); 
+});</code></pre>
+        <hr />
+        <h2>POST</h2>
+        <hr>
+        <pre class="code code-javascript"><label>JS</label><code>axios.post('/user', {
+  firstName: 'Fred',
+  lastName: 'Flintstone'
+})
+.then(function (response) {
+  console.log(response);
+})
+.catch(function (error) {
+  console.log(error);
+});</code></pre>
+        <h2>OTHER</h2>
+        <hr>
+        <pre class="code code-javascript"><label>JS</label><code>axios.request(config)
+axios.get(url, config)
+axios.delete(url, config)
+axios.head(url, config)
+axios.options(url, config)
+axios.post(url, data, config])
+axios.put(url, data, config])
+axios.patch(url, data, config])
+axios.postForm(url, data, config])
+axios.putForm(url, data, config])
+axios.patchForm(url, data, config])</code></pre>
+      </div>
+    </aside>
+  </div>
+</body>
+
+</html>
